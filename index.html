@@ -736,7 +736,7 @@
                 <!-- T-Shirt -->
                 <div class="apparel-item">
                     <div class="apparel-image" onclick="openImageModal('images/tshirt.jpg', 'T-Shirt', '$26.68')">
-                        <img src="images/tshirt.jpg" alt="Te Mata Wānanga T-Shirt" onerror="this.style.display='none'; this.parentElement.innerHTML='👕';">
+                        <img src="images/t-shirt.png" alt="Te Mata Wānanga T-Shirt" onerror="this.style.display='none'; this.parentElement.innerHTML='👕';">
                     </div>
                     <h3>T-Shirt</h3>
                     <div class="price">$26.68</div>
@@ -760,7 +760,7 @@
                 <!-- Crewneck -->
                 <div class="apparel-item">
                     <div class="apparel-image" onclick="openImageModal('images/crewneck.jpg', 'Crewneck', '$53.94')">
-                        <img src="images/crewneck.jpg" alt="Te Mata Wānanga Crewneck" onerror="this.style.display='none'; this.parentElement.innerHTML='🧥';">
+                        <img src="images/crewneck.png" alt="Te Mata Wānanga Crewneck" onerror="this.style.display='none'; this.parentElement.innerHTML='🧥';">
                     </div>
                     <h3>Crewneck</h3>
                     <div class="price">$53.94</div>
@@ -1245,7 +1245,7 @@
                 // Call Netlify Function (works in Replit too)
                 console.log('Calling submit-order function...');
                 
-                const response = await fetch('/.netlify/functions/submit-order', {
+                const response = await fetch('/api/submit-order', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
