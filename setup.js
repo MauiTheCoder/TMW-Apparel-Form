@@ -30,8 +30,8 @@ async function setup() {
     );
     const fromEmail =
       (await askQuestion(
-        "📮 From email address (e.g., orders@twoa.ac.nz): ",
-      )) || "orders@twoa.ac.nz";
+        "📬 From email address (default:",
+      )) || "leon.green@twoa.ac.nz";
     const sheetsId = await askQuestion("📊 Google Sheets ID (from the URL): ");
 
     console.log("\n🔐 For Google Sheets credentials, please:");
